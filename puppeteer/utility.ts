@@ -19,7 +19,7 @@ export const launchBrowser = async (data: browserOptions = { autoCloseAlert: fal
     const browser = await puppeteer.launch({
         headless: false,
         args: [`${data.disableNotifications && '--disable-notifications'}`, '--no-sandbox', '--trace-warnings', `--window-size=1404,1024`],
-        executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
+        // executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
         pipe: true,
     })
     const page = await (await browser.pages())[0]
