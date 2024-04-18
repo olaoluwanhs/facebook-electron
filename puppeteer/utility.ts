@@ -21,7 +21,7 @@ export const launchBrowser = async (
   console.log("Scraper running on platform: ", osPlatform);
   let executablePath;
   if (/^win/i.test(osPlatform)) {
-    executablePath = "";
+    executablePath = "C:/Program Files/Google/Chrome/Application/chrome.exe";
   } else if (/^linux/i.test(osPlatform)) {
     executablePath = "/usr/bin/google-chrome";
   } else if (/^darwin/i.test(osPlatform)) {
