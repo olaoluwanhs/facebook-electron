@@ -25,8 +25,7 @@ export const launchBrowser = async (
   } else if (/^linux/i.test(osPlatform)) {
     executablePath = "/usr/bin/google-chrome";
   } else if (/^darwin/i.test(osPlatform)) {
-    executablePath =
-      "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+    executablePath = "/Applications/Google Chrome.app";
   }
 
   const browser = await puppeteer.launch({
